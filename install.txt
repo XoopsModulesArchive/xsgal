@@ -1,0 +1,18 @@
+How to install xsgal
+===================
+-xsgal is installed as a regular XOOPS module, which means you should copy 
+the complete /xsgal folder into the /modules directory of your website. 
+-Then log in as administrator, go to System Admin > Modules, look for the 
+xsgal icon in the list of uninstalled modules and click in the install icon. 
+Follow the directions on the screen.
+
+Adjusting the settings:
+===================
+1. Edit modules/xsgal/include/settings.php
+
+2. Define where your image folder is for "$gallery_address". This is the folder of your main directory. For example if the path to my folder was "www.arabxoops.com/uploads/xsgal/" I would put "/uploads/xsgal/" as my gallery address.
+
+3. Put the excluded folders for folders you don't want the script to read, thumbnail size, preview picture size.
+
+4. You can adjust the style by modify style.css file and "$pictwidth"," pictheight"," $thumbwidth"," $thumbheight","$f_cols" in settings.php file.
+

@@ -1,0 +1,25 @@
+<!-- start module content -->
+<{foreach item=cssp from=$block.csspath}>
+<script type="text/javascript" src="<{$cssp.csspth}>/js/prototype.js"></script>
+<script type="text/javascript" src="<{$cssp.csspth}>/js/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="<{$cssp.csspth}>/js/lightbox.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="<{$cssp.csspth}>/style.css" />
+<{/foreach}>
+
+<table border="0" cellspacing="3" cellpadding="0">  
+  <tr>
+	<td align="center" valign="top">
+		<{foreach item=marquee from=$block.marque}>	 	 
+		  	<{$marquee.marquee_start}>		  	
+          <{foreach item=it from=$block}>
+             <{$it.dirLink}>           		
+		  <{/foreach}>		  
+		  	<{$marquee.marquee_end}>
+		<{/foreach}>
+    </td>
+  </tr>
+</table>
+
+
+
+<!-- end module content -->
